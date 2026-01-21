@@ -49,3 +49,33 @@
   - **_Action_**: list of actions this policy allows or denies
   - **_Resource_**: list of resources to which the actions applied to
     -Condition: conditions for when this policy is in effect(Optional)
+
+### IAM - password Policy
+
+- strong passwords = higer security for your account
+- In AWS you can setup a password policy
+  - Set a minimum password length
+  - require specific character types
+- Allow all IAM users to change their own passwords
+- Require users to change their password after some time
+
+### Multi Factor Authentication
+
+- User have asccess to your account and can possibly change configurations of delete resources in your AWS account
+- MFA = password you know + security device you own
+- benefit of MFA = if a password is stolen or hacked, the account is not compromised
+
+### MFA device options in AWS
+
+- virtual MFA device
+  - Google Autherticator
+  - Auty
+
+- Universal 2nd Factor(U2F) Security Key
+  - Yubikey by Yubico(3rd party)
+
+- Hardware key Fob MFA Device
+  - provided by Gemalto(3rd party)
+
+- Hardware Key Fob MFA Device for AWS GovCloud
+  - provided by surePassId
